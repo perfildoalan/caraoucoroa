@@ -1,0 +1,120 @@
+@keyframes aparecer {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+  
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  background-image: url("assets/background-cara-e-coroa.svg");
+  background-color: #55cab0;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#titulo {
+  width: 400px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #215e57;
+  position: relative;
+  top: 30px;
+  margin: auto;
+  box-shadow: 5px 5px #f2df18;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  text-shadow: 0px 0px 10px #0f573b;
+  padding-top: 5px;
+}
+
+h3 {
+  font-family: monospace;
+  font-size: 30px;
+  color: #ffda6f;
+  text-align: center;
+  position: relative;
+  bottom: 110px;
+}
+
+#botao {
+  width: 70px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #215e57;
+  position: relative;
+  top: 50px;
+  margin: auto;
+  text-align: center;
+  padding-top: 3px;
+  box-shadow: 2px 2px #f2df18;
+}
+
+button {
+  font-family: monospace;
+  background-color: #215e57;
+  border: none;
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-height: 400px) {
+  #fundo {
+    position: fixed;
+    bottom: -250px;
+    left: calc(50vw - 200px);
+    transform: scale(0.5);
+  }
+}
+
+
+@media only screen and (min-height: 400px) {
+  #fundo {
+    position: fixed;
+    bottom: -170px;
+    left: calc(50vw - 200px);
+    transform: scale(0.7);
+  }
+}
+
+@media only screen and (min-height: 600px) {
+  #fundo {
+    position: fixed;
+    bottom: -100px;
+    left: calc(50vw - 200px);
+  }
+}
+
+#moeda {
+  position: absolute;
+  top: 130px;
+  left: 70px;
+}
+
+#cara {
+  position: absolute;
+  top: 130px;
+  left: 70px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+#coroa {
+  position: absolute;
+  top: 130px;
+  left: 70px;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
